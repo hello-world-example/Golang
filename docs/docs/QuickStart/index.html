@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Start | Golang</title>
+
+
+<link rel="stylesheet" href="/Golang/book.min.79de1f7861b0c98f453c0a93bebf3608a280809e417787746c373699639900d7.css">
+
+
+
+
+<link rel="icon" href="/Golang/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://hello-world-example.github.io/Golang/">Golang</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fGolang\2f docs\2fQuickStart\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/Golang/docs/QuickStart/">Quick Start</a><br /></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/Golang/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Quick Start</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="快速开始">快速开始</h1>
+
+<h2 id="hello-world">Hello World</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, 世界&#34;</span>)
+}</code></pre></div>
+<blockquote>
+<p><strong>注意</strong>： Go 的入口必须是 <strong>main 包 main 方法</strong>，<strong>包名和文件夹名可以不一样</strong>。</p>
+</blockquote>
+
+<h2 id="包">包</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;math/rand&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;My favorite number is&#34;</span>, <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">10</span>))
+}</code></pre></div>
+<p>按照惯例，<strong>使用导入路径的最后一个目录</strong>。例如，导入<code>math/rand</code> 包，可以使用<code>rand.Intn(10)</code> 调用其中的方法。</p>
+
+<h2 id="函数">函数</h2>
+
+<pre><code>package main
+
+import &quot;fmt&quot;
+
+func add(x int, y int) int {
+	return x + y
+}
+
+func main() {
+	fmt.Println(add(42, 13))
+}
+</code></pre>
+
+<p>函数可以没有参数或接受多个参数。在这个例子中，<code>add</code> 接受两个 <code>int</code> 类型的参数(<strong>参数类型在变量名之后</strong>)。</p>
+
+<h3 id="函数参数">函数参数</h3>
+
+<p>当两个或<strong>多个连续的函数命名参数是同一类型</strong>，则除了<strong>最后一个类型之外</strong>，其他都可以省略。如：</p>
+
+<pre><code>func add(x, y int) int {
+	return x + y
+}
+</code></pre>
+
+<h3 id="函数返回值">函数返回值</h3>
+
+<p>函数可以返回任意数量的返回值。</p>
+
+<pre><code>func swap(x, y string) (string, string) {
+	return y, x
+}
+
+func main() {
+	a, b := swap(&quot;hello&quot;, &quot;world&quot;)
+	fmt.Println(a, b)
+}
+</code></pre>
+
+<h2 id="变量">变量</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">python</span>, <span style="color:#a6e22e">java</span> <span style="color:#66d9ef">bool</span> <span style="color:#75715e">// 定义了一个变量的列表；跟函数的参数列表一样，类型在后面
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">j</span> <span style="color:#66d9ef">int</span> = <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span> <span style="color:#75715e">// 变量初始化
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">int</span>
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">python</span>, <span style="color:#a6e22e">java</span>)
+}</code></pre></div>
+<p><code>var</code> 语句定义了一个变量的列表；跟函数的参数列表一样，类型在后面。就像在这个例子中看到的一样，<code>var</code> 语句可以定义在包或函数级别。</p>
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/hello-world-example/Golang/edit/master/HuGo/content/docs/QuickStart.md" target="_blank" rel="noopener">
+      <img src="/Golang/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#快速开始">快速开始</a>
+<ul>
+<li><a href="#hello-world">Hello World</a></li>
+<li><a href="#包">包</a></li>
+<li><a href="#函数">函数</a>
+<ul>
+<li><a href="#函数参数">函数参数</a></li>
+<li><a href="#函数返回值">函数返回值</a></li>
+</ul></li>
+<li><a href="#变量">变量</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>
