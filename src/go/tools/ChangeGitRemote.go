@@ -137,3 +137,9 @@ func main(){
 		}
 	}	
 }
+
+/* 
+go build -o ChangeGitRemote.mac ChangeGitRemote.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ChangeGitRemote.linux ChangeGitRemote.go
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o ChangeGitRemote.exe ChangeGitRemote.go
+*/
