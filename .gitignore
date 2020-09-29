@@ -2,7 +2,7 @@ target
 *.iml
 .idea
 
-.exe
-.win
-.mac
-.linux
+*.exe
+*.win
+*.mac
+*.linux
