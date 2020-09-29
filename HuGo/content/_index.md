@@ -23,7 +23,8 @@ type: docs
 
 - Mail
   
-- https://studygolang.com/articles/2098
+  
+  - https://studygolang.com/articles/2098
   
 - SQL
   - https://segmentfault.com/a/1190000003036452

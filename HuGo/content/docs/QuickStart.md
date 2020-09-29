@@ -35,7 +35,7 @@ func main() {
 
 ## 函数
 
-```
+```go
 package main
 
 import "fmt"
@@ -52,7 +52,7 @@ func main() {
 
 ### 函数参数
 当两个或**多个连续的函数命名参数是同一类型**，则除了**最后一个类型之外**，其他都可以省略。如：
-```
+```go
 func add(x, y int) int {
 	return x + y
 }
@@ -60,7 +60,7 @@ func add(x, y int) int {
 
 ### 函数返回值
 函数可以返回任意数量的返回值。
-```
+```go
 func swap(x, y string) (string, string) {
 	return y, x
 }
