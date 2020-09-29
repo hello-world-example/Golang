@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Golang</title>
@@ -15,8 +15,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hello-world-example.github.io/Golang/_sidebar/</guid>
-      <description> Quick Start
-  </description>
+      <description>  Quick Start FAQ   全平台编译    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hello-world-example.github.io/Golang/docs/FAQ/Full-Platform-Build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hello-world-example.github.io/Golang/docs/FAQ/Full-Platform-Build/</guid>
+      <description>全平台编译 MAC # Linux 可执行程序 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main.linux main.go # Windows 可执行程序 CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o main.exe main.go Linux # MAC 可执行程序 CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o main.mac main.go # Windows 可执行程序 CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o main.exe main.go Windows # MAC 可执行程序 SET CGO_ENABLED=0 SET GOOS=darwin SET GOARCH=amd64 go build -o main.mac main.go # Linux 可执行程序 SET CGO_ENABLED=0 SET GOOS=linux SET GOARCH=amd64 go build -o main.</description>
     </item>
     
     <item>
@@ -27,7 +35,8 @@
       <guid>https://hello-world-example.github.io/Golang/docs/QuickStart/</guid>
       <description>快速开始 Hello World package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello, 世界&amp;#34;) }  注意： Go 的入口必须是 main 包 main 方法，包名和文件夹名可以不一样。
  包 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;math/rand&amp;#34; ) func main() { fmt.Println(&amp;#34;My favorite number is&amp;#34;, rand.Intn(10)) } 按照惯例，使用导入路径的最后一个目录。例如，导入math/rand 包，可以使用rand.Intn(10) 调用其中的方法。
-函数 package main import &amp;quot;fmt&amp;quot; func add(x int, y int) int { return x + y } func main() { fmt.Println(add(42, 13)) }  函数可以没有参数或接受多个参数。在这个例子中，add 接受两个 int 类型的参数(参数类型在变量名之后)。</description>
+函数 package main import &amp;#34;fmt&amp;#34; func add(x int, y int) int { return x + y } func main() { fmt.Println(add(42, 13)) } 函数可以没有参数或接受多个参数。在这个例子中，add 接受两个 int 类型的参数(参数类型在变量名之后)。
+函数参数 当两个或多个连续的函数命名参数是同一类型，则除了最后一个类型之外，其他都可以省略。如：</description>
     </item>
     
   </channel>

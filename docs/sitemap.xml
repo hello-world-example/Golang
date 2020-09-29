@@ -1,24 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://hello-world-example.github.io/Golang/_sidebar/</loc>
-    <lastmod>2019-09-21T19:21:24+08:00</lastmod>
+    <lastmod>2020-09-29T15:56:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Golang/docs/FAQ/Full-Platform-Build/</loc>
+    <lastmod>2020-09-29T15:56:03+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://hello-world-example.github.io/Golang/docs/QuickStart/</loc>
-    <priority>0</priority>
+    <lastmod>2020-09-29T15:56:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Golang/categories/</loc>
   </url>
   
   <url>
     <loc>https://hello-world-example.github.io/Golang/docs/</loc>
+    <lastmod>2020-09-29T15:56:03+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://hello-world-example.github.io/Golang/</loc>
-    <lastmod>2019-09-21T19:21:24+08:00</lastmod>
+    <lastmod>2020-09-29T15:56:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hello-world-example.github.io/Golang/tags/</loc>
   </url>
   
 </urlset>
