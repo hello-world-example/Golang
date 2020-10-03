@@ -9,16 +9,11 @@ type: docs
 
 - 中国社区
   - [Go 语言中文网](https://studygolang.com/)
-  - [Golang中国](https://studygolang.com/)
 
 
 - 文档
   - [Go 快速入门指南](http://tour.studygolang.com/list)
   - [Go by Example 中文](https://books.studygolang.com/gobyexample/)
-
-
-- 依赖
-  - [GoDoc](https://godoc.org/) (Search for Go Packages)
 
 
 - Mail
