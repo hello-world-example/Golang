@@ -46,6 +46,22 @@ $ go env -w GOPROXY=https://goproxy.cn,direct
 
 
 
+## Hello World
+
+> **注意**： Go 的入口必须是 **main 包 main 方法**，**包名和文件夹名可以不一样**
+>
+> `go run HelloWorld.go` 运行程序
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 世界")
+}
+```
+
 
 
 ## 卸载
